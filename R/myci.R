@@ -13,6 +13,6 @@ myci <- function(data, alpha = 0.05) {
   t=qt(1-alpha/2,n-1)
   ci=c()
   ci[1]=mean(data)-t*sd(data)/sqrt(n)
-  ci[2]=mean(data())+t*sd(data)/sqrt(n)
+  ci[2]=mean(data)+t*sd(data)/sqrt(n)
   ci
 }
